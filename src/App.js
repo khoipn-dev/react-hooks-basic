@@ -6,19 +6,25 @@ import ClockHooks from "./customHooks/ClockHooks";
 import Counter from "./React.memo/Counter";
 import {DemoProvider} from "./contexts/DemoContext";
 import DemoUseContext from "./contexts/DemoUseContext";
+import DemoUseAuth from "./useReducer/DemoUseAuth";
+import {AuthProvider} from "./useReducer/AuthContext";
 
 function App() {
-  return (
-    <div className="App">
-      {/*<Post />*/}
-      {/*<Clock />*/}
-      {/*<ClockHooks />*/}
-      <Counter />
-      <DemoProvider>
-          <DemoUseContext/>
-      </DemoProvider>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            {/*<Post />*/}
+            {/*<Clock />*/}
+            {/*<ClockHooks />*/}
+            <Counter/>
+            <DemoProvider>
+                <DemoUseContext/>
+            </DemoProvider>
+            <AuthProvider>
+                <DemoUseAuth />
+            </AuthProvider>
+        </div>
+    );
 }
 
 export default App;
