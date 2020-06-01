@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import useClock from "../hooks/useClock";
 import './ClockHooks.scss';
 import useMagicColor from "../hooks/useMagicColor";
