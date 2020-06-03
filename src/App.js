@@ -9,6 +9,7 @@ import DemoUseContext from "./contexts/DemoUseContext";
 import DemoUseAuth from "./useReducer/DemoUseAuth";
 import {AuthProvider} from "./useReducer/AuthContext";
 import Demo from "./useMemo-useCallback/Demo";
+import DemoUseFormValidation from "./customHooks/DemoUseFormValidation";
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
             {/*<AuthProvider>*/}
             {/*    <DemoUseAuth />*/}
             {/*</AuthProvider>*/}
-            <Demo />
+            {/*<Demo />*/}
+            <DemoUseFormValidation />
         </div>
     );
 }
