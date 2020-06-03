@@ -10,7 +10,7 @@ export function AuthProvider(props) {
     const store = {auth, dispatch};
 
     return (
-        <AuthContext.Provider value={{...store}}>
+        <AuthContext.Provider value={store}>
             {children}
         </AuthContext.Provider>
     );

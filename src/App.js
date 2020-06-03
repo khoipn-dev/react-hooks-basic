@@ -8,6 +8,7 @@ import {DemoProvider} from "./contexts/DemoContext";
 import DemoUseContext from "./contexts/DemoUseContext";
 import DemoUseAuth from "./useReducer/DemoUseAuth";
 import {AuthProvider} from "./useReducer/AuthContext";
+import Demo from "./useMemo-useCallback/Demo";
 
 function App() {
 
@@ -16,13 +17,14 @@ function App() {
             {/*<Post />*/}
             {/*<Clock />*/}
             {/*<ClockHooks />*/}
-            <Counter/>
-            <DemoProvider>
-                <DemoUseContext/>
-            </DemoProvider>
-            <AuthProvider>
-                <DemoUseAuth />
-            </AuthProvider>
+            {/*<Counter/>*/}
+            {/*<DemoProvider>*/}
+            {/*    <DemoUseContext/>*/}
+            {/*</DemoProvider>*/}
+            {/*<AuthProvider>*/}
+            {/*    <DemoUseAuth />*/}
+            {/*</AuthProvider>*/}
+            <Demo />
         </div>
     );
 }
